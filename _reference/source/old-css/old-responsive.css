@@ -1,0 +1,63 @@
+
+/* =========================================================
+   ZENDIOTECH RESPONSIVE STANDARD
+   ========================================================= */
+@media (max-width:1100px){
+  .nav-links{gap:18px!important}
+  .hero-grid,.split,.two-column,.contact-layout{grid-template-columns:1fr!important}
+  .grid-4,.services-grid,.capabilities-grid{grid-template-columns:repeat(2,1fr)!important}
+  .process-grid,.process-list{grid-template-columns:repeat(2,1fr)!important}
+  .footer-grid{grid-template-columns:1.3fr 1fr 1fr!important}
+}
+@media (max-width:820px){
+  .container{width:calc(100% - 40px)!important}
+  .site-header,.industries-header,.nav{height:76px!important}
+  .logo{font-size:23px!important}
+  .logo img,.brand img{width:36px!important;height:36px!important}
+  .menu-toggle{display:block!important}
+  .nav-links{
+    position:fixed!important;
+    left:16px!important;right:16px!important;top:84px!important;
+    display:grid!important;gap:2px!important;
+    padding:12px!important;
+    background:rgba(5,38,73,.98)!important;
+    border:1px solid rgba(255,255,255,.12)!important;
+    border-radius:20px!important;
+    box-shadow:0 25px 60px rgba(0,0,0,.28)!important;
+    transform:translateY(-12px) scale(.98)!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transition:.25s var(--zd-ease)!important;
+  }
+  .nav-links.active{transform:none!important;opacity:1!important;pointer-events:auto!important}
+  .nav-links a{padding:13px 15px!important;border-radius:12px!important}
+  .nav-links a:hover{background:rgba(255,255,255,.06)!important}
+  .nav-links a::after{display:none!important}
+  .language-toggle,.lang-btn{display:none!important}
+  .hero{padding-top:125px!important}
+  .hero-visual{min-height:390px}
+  .section{padding:80px 0!important}
+  .section-head{display:block!important}
+  .section-head>p{margin-top:18px}
+  .grid-3,.grid-4,.services-grid,.capabilities-grid{grid-template-columns:1fr!important}
+  .process,.process-grid,.process-list{grid-template-columns:1fr 1fr!important}
+  .form-grid{grid-template-columns:1fr!important}
+  .footer-grid{grid-template-columns:1fr 1fr!important}
+}
+@media (max-width:560px){
+  .container{width:calc(100% - 28px)!important}
+  h1{font-size:clamp(2.7rem,14vw,4.2rem)!important}
+  h2{font-size:clamp(2.15rem,11vw,3.2rem)!important}
+  .hero p{font-size:1.04rem}
+  .hero-actions,.hero-cta-actions{display:grid!important}
+  .hero-actions .btn,.hero-cta-actions .btn{width:100%!important}
+  .hero-visual{min-height:310px}
+  .orbital{width:300px!important;height:300px!important}
+  .core{width:145px!important;height:145px!important;border-radius:24px!important}
+  .core-logo{width:65px!important;height:65px!important}
+  .node{display:none!important}
+  .grid-2,.grid-3,.grid-4,.services-grid,.capabilities-grid,.process,.process-grid,.process-list{grid-template-columns:1fr!important}
+  .card{padding:24px}
+  .footer-grid{grid-template-columns:1fr!important}
+  .footer-bottom{display:block!important}
+}

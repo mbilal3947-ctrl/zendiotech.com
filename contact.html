@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zendiotech | Contact & Technology Solutions</title>
+
+    <meta
+        name="description"
+        content="Contact Zendiotech to discuss websites, software, cloud solutions, IT support, cybersecurity, AI automation, and practical technology solutions for your business."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Zendiotech">
+    <meta name="theme-color" content="#062f5f">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo/zendiotech-logo-concept-2.png"
+    >
+
+    <link rel="canonical" href="https://zendiotech.com/contact.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zendiotech | Contact & Technology Solutions">
+    <meta
+        property="og:description"
+        content="Start a conversation with Zendiotech about practical technology solutions for your business."
+    >
+    <meta property="og:url" content="https://zendiotech.com/contact.html">
+    <meta property="og:site_name" content="Zendiotech">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zendiotech | Contact">
+    <meta
+        name="twitter:description"
+        content="Discuss your technology requirement with Zendiotech."
+    >
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* =========================================================
+           CONTACT PAGE
+           Page-local styles only.
+           Shared foundation remains untouched.
+           ========================================================= */
+
+        .contact-hero {
+            position: relative;
+            overflow: hidden;
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+            background: var(--color-background, #f5f8fc);
+        }
+
+        .contact-hero-bg {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(
+                    circle at 78% 50%,
+                    rgba(20, 139, 196, 0.10),
+                    transparent 28%
+                );
+        }
+
+        .contact-hero-inner {
+            position: relative;
+            z-index: 1;
+            width: min(1400px, calc(100% - 48px));
+            margin-inline: auto;
+            padding-block: 100px;
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+            align-items: center;
+            gap: 60px;
+        }
+
+        .contact-hero-content {
+            max-width: 760px;
+        }
+
+        .contact-hero-content h1 {
+            max-width: 760px;
+            margin-block: 22px 28px;
+        }
+
+        .contact-hero-text {
+            max-width: 690px;
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            line-height: 1.8;
+        }
+
+        .contact-hero-button {
+            margin-top: 30px;
+        }
+
+        .contact-hero-visual {
+            position: relative;
+            width: min(480px, 100%);
+            aspect-ratio: 1;
+            margin-inline: auto;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact-orbit {
+            position: absolute;
+            border: 1px solid rgba(10, 133, 191, 0.16);
+            border-radius: 50%;
+        }
+
+        .orbit-one {
+            width: 92%;
+            height: 92%;
+        }
+
+        .orbit-two {
+            width: 68%;
+            height: 68%;
+        }
+
+        .orbit-three {
+            width: 44%;
+            height: 44%;
+        }
+
+        .contact-core {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(10, 133, 191, 0.08);
+            box-shadow:
+                0 0 0 22px rgba(10, 133, 191, 0.035),
+                0 0 0 55px rgba(10, 133, 191, 0.025);
+        }
+
+        .contact-core-inner {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(10, 133, 191, 0.10);
+            color: #087fba;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .orbit-label {
+            position: absolute;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            color: #087fba;
+            white-space: nowrap;
+        }
+
+        .label-business {
+            inset-block-start: 7%;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+        }
+
+        .label-technology {
+            inset-inline-end: 1%;
+            inset-block-start: 50%;
+            transform: translateY(-50%);
+        }
+
+        .label-solutions {
+            inset-block-end: 7%;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+        }
+
+        .label-growth {
+            inset-inline-start: 1%;
+            inset-block-start: 50%;
+            transform: translateY(-50%);
+        }
+
+        .contact-intro,
+        .contact-next-section {
+            padding-block: 110px;
+        }
+
+        .contact-intro-heading,
+        .contact-next-heading {
+            max-width: 850px;
+            margin-bottom: 55px;
+        }
+
+        .contact-intro-heading h2,
+        .contact-next-heading h2 {
+            margin-block: 16px 20px;
+        }
+
+        .contact-main-grid {
+            width: min(1400px, calc(100% - 48px));
+            margin-inline: auto;
+            display: grid;
+            grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.25fr);
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 18px;
+        }
+
+        .contact-info-card {
+            padding: 28px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(6, 47, 95, 0.06);
+        }
+
+        .contact-info-card > span {
+            display: block;
+            margin-bottom: 10px;
+            color: #087fba;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .contact-info-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .contact-info-card p {
+            margin: 0;
+        }
+
+        .contact-info-card a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-info-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form-wrapper {
+            padding: clamp(28px, 5vw, 52px);
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 18px 50px rgba(6, 47, 95, 0.08);
+        }
+
+        .contact-form-wrapper h3 {
+            margin-block: 15px 10px;
+            font-size: clamp(1.7rem, 3vw, 2.5rem);
+        }
+
+        .contact-form-intro {
+            margin-bottom: 32px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 22px;
+        }
+
+        .contact-form-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .contact-field {
+            display: grid;
+            gap: 9px;
+        }
+
+        .contact-field label {
+            font-weight: 700;
+        }
+
+        .contact-field input,
+        .contact-field select,
+        .contact-field textarea {
+            width: 100%;
+            min-height: 50px;
+            padding: 13px 15px;
+            border: 1px solid rgba(6, 47, 95, 0.14);
+            border-radius: 10px;
+            background: #fff;
+            color: inherit;
+            font: inherit;
+            outline: none;
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .contact-field textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-field input:focus,
+        .contact-field select:focus,
+        .contact-field textarea:focus {
+            border-color: #087fba;
+            box-shadow: 0 0 0 3px rgba(8, 127, 186, 0.10);
+        }
+
+        .contact-submit {
+            min-height: 52px;
+            border: 0;
+            border-radius: 10px;
+            padding-inline: 25px;
+            background: #087fba;
+            color: #fff;
+            font: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            transition:
+                transform 0.2s ease,
+                opacity 0.2s ease;
+        }
+
+        .contact-submit:hover {
+            transform: translateY(-2px);
+        }
+
+        .contact-form-note {
+            margin: 0;
+            font-size: 0.82rem;
+            line-height: 1.6;
+            opacity: 0.72;
+        }
+
+        .contact-next-section {
+            background: #eef4f9;
+        }
+
+        .contact-next-inner {
+            width: min(1400px, calc(100% - 48px));
+            margin-inline: auto;
+        }
+
+        .contact-next-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .contact-next-card {
+            padding: 30px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(6, 47, 95, 0.05);
+        }
+
+        .contact-next-card > span {
+            display: block;
+            margin-bottom: 25px;
+            color: #087fba;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.10em;
+        }
+
+        .contact-next-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .contact-next-card p {
+            margin: 0;
+        }
+
+        .contact-principle {
+            padding: 120px 24px;
+            text-align: center;
+            background: #062f5f;
+            color: #fff;
+        }
+
+        .contact-principle h2 {
+            max-width: 900px;
+            margin: 18px auto;
+            color: #fff;
+        }
+
+        .contact-principle > p:not(.eyebrow) {
+            max-width: 760px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.78);
+        }
+
+        .contact-dark-button {
+            background: #fff;
+            color: #062f5f;
+        }
+
+        .contact-final {
+            padding: 110px 24px;
+            text-align: center;
+        }
+
+        .contact-final h2 {
+            max-width: 900px;
+            margin: 18px auto;
+        }
+
+        .contact-final > p:not(.eyebrow) {
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: 1100px) {
+            .contact-hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-hero-content {
+                margin-inline: auto;
+            }
+
+            .contact-hero-visual {
+                width: min(400px, 80vw);
+            }
+
+            .contact-main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-next-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 820px) {
+            .contact-hero {
+                min-height: auto;
+            }
+
+            .contact-hero-inner {
+                padding-block: 80px;
+            }
+
+            .contact-intro,
+            .contact-next-section {
+                padding-block: 80px;
+            }
+
+            .contact-form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-next-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-principle,
+            .contact-final {
+                padding-block: 85px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .contact-hero-inner,
+            .contact-main-grid,
+            .contact-next-inner {
+                width: min(100% - 28px, 1400px);
+            }
+
+            .contact-hero-inner {
+                padding-block: 60px;
+            }
+
+            .contact-hero-visual {
+                width: min(310px, 80vw);
+            }
+
+            .contact-core {
+                width: 105px;
+                height: 105px;
+            }
+
+            .contact-core-inner {
+                width: 52px;
+                height: 52px;
+            }
+
+            .contact-form-wrapper,
+            .contact-info-card,
+            .contact-next-card {
+                padding: 22px;
+                border-radius: 16px;
+            }
+
+            .contact-intro,
+            .contact-next-section {
+                padding-block: 65px;
+            }
+
+            .contact-principle,
+            .contact-final {
+                padding-inline: 18px;
+                padding-block: 70px;
+            }
+        }
+
+        [dir="rtl"] .contact-hero-content,
+        [dir="rtl"] .contact-intro-heading,
+        [dir="rtl"] .contact-next-heading {
+            text-align: start;
+        }
+
+        [dir="rtl"] .label-business,
+        [dir="rtl"] .label-solutions {
+            transform: translateX(50%);
+        }
+
+        @media (max-width: 1100px) {
+            [dir="rtl"] .contact-hero-content {
+                text-align: center;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .contact-submit,
+            .contact-field input,
+            .contact-field select,
+            .contact-field textarea {
+                transition: none;
+            }
+
+            .contact-submit:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="contact-page">
+
+<header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Zendiotech home"
+        >
+            <img
+                src="assets/logo/zendiotech-logo-concept-2.png"
+                alt="Zendiotech logo"
+            >
+            <span>Zendiotech</span>
+        </a>
+
+        <button
+            id="menuToggle"
+            class="menu-toggle"
+            type="button"
+            aria-controls="navLinks"
+            aria-expanded="false"
+            aria-label="Open menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="navHome">Home</a>
+            <a href="about.html" data-i18n="navAbout">About</a>
+            <a href="services.html" data-i18n="navServices">Services</a>
+            <a href="industries.html" data-i18n="navIndustries">Industries</a>
+            <a href="how-we-work.html" data-i18n="navHowWeWork">How We Work</a>
+            <a href="roadmap.html" data-i18n="navRoadmap">Roadmap</a>
+            <a
+                href="contact.html"
+                aria-current="page"
+                data-i18n="navContact"
+            >Contact</a>
+
+            <button
+                class="language-toggle"
+                id="languageToggle"
+                type="button"
+                data-i18n="navLanguage"
+            >العربية</button>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg" aria-hidden="true"></div>
+
+        <div class="contact-hero-inner">
+
+            <div class="contact-hero-content reveal">
+                <p class="eyebrow" data-i18n="contactHeroEyebrow">
+                    CONTACT ZENDIOTECH
+                </p>
+
+                <h1 data-i18n="contactHeroTitle">
+                    Let’s build what’s next for your business.
+                </h1>
+
+                <p
+                    class="contact-hero-text"
+                    data-i18n="contactHeroDescription"
+                >
+                    Whether you are starting a new digital project,
+                    improving an existing system, or exploring how
+                    technology can support your next stage of growth,
+                    let’s start with the problem you are trying to solve.
+                </p>
+
+                <a
+                    class="button contact-hero-button"
+                    href="#contact-form"
+                    data-i18n="contactHeroButton"
+                >
+                    Start a Conversation
+                </a>
+            </div>
+
+            <div
+                class="contact-hero-visual reveal"
+                aria-hidden="true"
+            >
+                <div class="contact-orbit orbit-one"></div>
+                <div class="contact-orbit orbit-two"></div>
+                <div class="contact-orbit orbit-three"></div>
+
+                <span class="orbit-label label-business">
+                    BUSINESS
+                </span>
+
+                <span class="orbit-label label-technology">
+                    TECHNOLOGY
+                </span>
+
+                <span class="orbit-label label-solutions">
+                    SOLUTIONS
+                </span>
+
+                <span class="orbit-label label-growth">
+                    GROWTH
+                </span>
+
+                <div class="contact-core">
+                    <div class="contact-core-inner">Z</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT + FORM -->
+    <section class="contact-intro" id="contact-form">
+
+        <div class="contact-main-grid">
+
+            <div class="contact-intro-heading reveal">
+                <p class="eyebrow blue" data-i18n="contactIntroEyebrow">
+                    START A CONVERSATION
+                </p>
+
+                <h2 data-i18n="contactIntroTitle">
+                    Tell us what you’re trying to build.
+                </h2>
+
+                <p data-i18n="contactIntroDescription">
+                    We start by understanding the business requirement,
+                    the current challenge, the desired outcome, and the
+                    most practical next step.
+                </p>
+            </div>
+
+            <div></div>
+
+            <div class="contact-info reveal">
+
+                <article class="contact-info-card">
+                    <span data-i18n="contactEmailLabel">Email</span>
+
+                    <h3 data-i18n="contactEmailTitle">
+                        Business enquiries
+                    </h3>
+
+                    <p>
+                        <a href="mailto:info@zendiotech.com">
+                            info@zendiotech.com
+                        </a>
+                    </p>
+                </article>
+
+                <article class="contact-info-card">
+                    <span data-i18n="contactLocationLabel">
+                        Location
+                    </span>
+
+                    <h3 data-i18n="contactLocationTitle">
+                        UAE
+                    </h3>
+
+                    <p data-i18n="contactLocationDescription">
+                        Zendiotech is being developed with the UAE as
+                        an important part of its growth direction.
+                    </p>
+                </article>
+
+                <article class="contact-info-card">
+                    <span data-i18n="contactTechnologyLabel">
+                        Technology
+                    </span>
+
+                    <h3 data-i18n="contactTechnologyTitle">
+                        Practical solutions
+                    </h3>
+
+                    <p data-i18n="contactTechnologyDescription">
+                        Websites, applications, cloud solutions,
+                        IT support, cybersecurity, AI automation,
+                        and technology consulting.
+                    </p>
+                </article>
+
+                <article class="contact-info-card">
+                    <span data-i18n="contactNextLabel">
+                        Next step
+                    </span>
+
+                    <h3 data-i18n="contactNextTitle">
+                        Start with the requirement
+                    </h3>
+
+                    <p data-i18n="contactNextDescription">
+                        Tell us what you are trying to achieve and
+                        we can begin with understanding the requirement.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="contact-form-wrapper reveal">
+
+                <p
+                    class="eyebrow blue"
+                    data-i18n="contactFormEyebrow"
+                >
+                    YOUR REQUIREMENT
+                </p>
+
+                <h3 data-i18n="contactFormTitle">
+                    Send us an enquiry.
+                </h3>
+
+                <p
+                    class="contact-form-intro"
+                    data-i18n="contactFormDescription"
+                >
+                    Share a few details about your business and
+                    what you need help with.
+                </p>
+
+                <form
+                    action="#"
+                    class="contact-form"
+                    method="post"
+                    novalidate
+                >
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-field">
+                            <label
+                                for="fullName"
+                                data-i18n="contactFullName"
+                            >
+                                Full Name
+                            </label>
+
+                            <input
+                                id="fullName"
+                                name="fullName"
+                                type="text"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label
+                                for="company"
+                                data-i18n="contactCompany"
+                            >
+                                Business / Company
+                            </label>
+
+                            <input
+                                id="company"
+                                name="company"
+                                type="text"
+                                autocomplete="organization"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="contact-form-row">
+
+                        <div class="contact-field">
+                            <label
+                                for="email"
+                                data-i18n="contactEmail"
+                            >
+                                Email Address
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label
+                                for="phone"
+                                data-i18n="contactPhone"
+                            >
+                                Phone Number
+                            </label>
+
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                autocomplete="tel"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="contact-field">
+
+                        <label
+                            for="service"
+                            data-i18n="contactServiceLabel"
+                        >
+                            What do you need help with?
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+                            <option
+                                value=""
+                                selected
+                                disabled
+                                data-i18n="contactServicePlaceholder"
+                            >
+                                Select a requirement
+                            </option>
+
+                            <option
+                                value="website-development"
+                                data-i18n="serviceWebsite"
+                            >
+                                Website / Web Development
+                            </option>
+
+                            <option
+                                value="web-application"
+                                data-i18n="serviceWebApplication"
+                            >
+                                Web Application Development
+                            </option>
+
+                            <option
+                                value="mobile-app"
+                                data-i18n="serviceMobileApp"
+                            >
+                                Mobile App Development
+                            </option>
+
+                            <option
+                                value="cloud"
+                                data-i18n="serviceCloud"
+                            >
+                                Cloud Solutions
+                            </option>
+
+                            <option
+                                value="it-support"
+                                data-i18n="serviceITSupport"
+                            >
+                                Managed IT Support
+                            </option>
+
+                            <option
+                                value="cybersecurity"
+                                data-i18n="serviceCybersecurity"
+                            >
+                                Cybersecurity
+                            </option>
+
+                            <option
+                                value="ai-automation"
+                                data-i18n="serviceAI"
+                            >
+                                AI & Automation
+                            </option>
+
+                            <option
+                                value="consulting"
+                                data-i18n="serviceConsulting"
+                            >
+                                Technology Consulting
+                            </option>
+
+                            <option
+                                value="other"
+                                data-i18n="serviceOther"
+                            >
+                                Other
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <div class="contact-field">
+
+                        <label
+                            for="message"
+                            data-i18n="contactMessage"
+                        >
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                            placeholder="Tell us about your requirement, challenge, or project."
+                            data-i18n-placeholder="contactMessagePlaceholder"
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        class="contact-submit"
+                        type="submit"
+                        data-i18n="contactSubmit"
+                    >
+                        Send Enquiry
+                    </button>
+
+                    <p
+                        class="contact-form-note"
+                        data-i18n="contactFormNote"
+                    >
+                        This form is currently a front-end enquiry
+                        interface. A secure backend submission system
+                        will be connected during the appropriate
+                        implementation stage.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHAT HAPPENS NEXT -->
+    <section class="contact-next-section">
+
+        <div class="contact-next-inner">
+
+            <div class="contact-next-heading reveal">
+
+                <p
+                    class="eyebrow blue"
+                    data-i18n="contactProcessEyebrow"
+                >
+                    WHAT HAPPENS NEXT
+                </p>
+
+                <h2 data-i18n="contactProcessTitle">
+                    A simple path from conversation to action.
+                </h2>
+
+                <p data-i18n="contactProcessDescription">
+                    Good technology starts with understanding.
+                    Our approach keeps the next step clear and
+                    connected to the actual business requirement.
+                </p>
+
+            </div>
+
+            <div class="contact-next-grid">
+
+                <article class="contact-next-card reveal">
+                    <span data-i18n="contactStep1Label">
+                        01 — UNDERSTAND
+                    </span>
+
+                    <h3 data-i18n="contactStep1Title">
+                        Understand the requirement.
+                    </h3>
+
+                    <p data-i18n="contactStep1Description">
+                        We first understand your business,
+                        requirements, challenges, goals,
+                        and priorities.
+                    </p>
+                </article>
+
+                <article class="contact-next-card reveal">
+                    <span data-i18n="contactStep2Label">
+                        02 — DISCUSS
+                    </span>
+
+                    <h3 data-i18n="contactStep2Title">
+                        Discuss the right approach.
+                    </h3>
+
+                    <p data-i18n="contactStep2Description">
+                        We discuss the practical technology
+                        approach and the appropriate scope
+                        for the project.
+                    </p>
+                </article>
+
+                <article class="contact-next-card reveal">
+                    <span data-i18n="contactStep3Label">
+                        03 — PLAN
+                    </span>
+
+                    <h3 data-i18n="contactStep3Title">
+                        Define the next step.
+                    </h3>
+
+                    <p data-i18n="contactStep3Description">
+                        We establish a clear direction based
+                        on what the business actually needs.
+                    </p>
+                </article>
+
+                <article class="contact-next-card reveal">
+                    <span data-i18n="contactStep4Label">
+                        04 — BUILD
+                    </span>
+
+                    <h3 data-i18n="contactStep4Title">
+                        Move forward with purpose.
+                    </h3>
+
+                    <p data-i18n="contactStep4Description">
+                        Where appropriate, we move into structured
+                        planning, development, launch, and improvement.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRINCIPLE -->
+    <section class="contact-principle">
+
+        <p class="eyebrow" data-i18n="contactPrincipleEyebrow">
+            PRACTICAL TECHNOLOGY
+        </p>
+
+        <h2 data-i18n="contactPrincipleTitle">
+            Start with the problem. Build the right solution.
+        </h2>
+
+        <p data-i18n="contactPrincipleDescription">
+            Good technology begins with understanding.
+            Zendiotech focuses on practical solutions that
+            make sense for the businesses using them.
+        </p>
+
+        <a
+            class="button contact-dark-button"
+            href="#contact-form"
+            data-i18n="contactPrincipleButton"
+        >
+            Start a Conversation
+        </a>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="contact-final">
+
+        <p class="eyebrow" data-i18n="contactFinalEyebrow">
+            LET’S TALK
+        </p>
+
+        <h2 data-i18n="contactFinalTitle">
+            Ready to discuss what comes next?
+        </h2>
+
+        <p data-i18n="contactFinalDescription">
+            Tell us what you are trying to achieve, and we’ll
+            start with understanding the requirement.
+        </p>
+
+        <a
+            class="button"
+            href="#contact-form"
+            data-i18n="contactFinalButton"
+        >
+            Start a Conversation
+        </a>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <a
+                    class="logo"
+                    href="index.html"
+                    aria-label="Zendiotech home"
+                >
+                    <img
+                        src="assets/logo/zendiotech-logo-concept-2.png"
+                        alt="Zendiotech logo"
+                    >
+                    <span>Zendiotech</span>
+                </a>
+
+                <p data-i18n="footerDescription">
+                    Practical digital products, technology solutions,
+                    and dependable IT support for businesses ready
+                    to move forward.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 data-i18n="footerCompany">
+                    Company
+                </h3>
+
+                <a href="index.html" data-i18n="navHome">Home</a>
+                <a href="about.html" data-i18n="navAbout">About</a>
+                <a href="industries.html" data-i18n="navIndustries">
+                    Industries
+                </a>
+                <a href="how-we-work.html" data-i18n="navHowWeWork">
+                    How We Work
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 data-i18n="footerExplore">
+                    Explore
+                </h3>
+
+                <a href="services.html" data-i18n="navServices">
+                    Services
+                </a>
+                <a href="roadmap.html" data-i18n="navRoadmap">
+                    Roadmap
+                </a>
+                <a href="contact.html" data-i18n="navContact">
+                    Contact
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 data-i18n="footerContact">
+                    Contact
+                </h3>
+                
+                <a href="mailto:info@zendiotech.com">
+                    info@zendiotech.com
+                </a>
+
+                <a
+                    href="https://wa.me/919207736472?text=Hello%20Zendiotech%2C%20I%20would%20like%20to%20discuss%20a%20technology%20solution%20for%20my%20business."
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WhatsApp
+                </a>
+
+                <span data-i18n="footerLocation">
+                    UAE • Technology Solutions
+                </span>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Legal</h3>
+
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        <div class="footer-bottom">
+
+            <span>
+                © <span data-year></span>
+                Zendiotech.
+                <span data-i18n="footerRights">
+                    All rights reserved.
+                </span>
+            </span>
+
+            <span data-i18n="footerTagline">
+                Built for practical digital growth.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script defer src="js/main.js"></script>
+
+</body>
+</html>
