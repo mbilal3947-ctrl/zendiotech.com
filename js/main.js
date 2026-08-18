@@ -50,6 +50,7 @@
         navIndustries: 'Industries',
         navHowWeWork: 'How We Work',
         navRoadmap: 'Roadmap',
+        navMarketplace: 'Marketplace',
         navContact: 'Contact',
         navLanguage: 'العربية',
 
@@ -640,6 +641,7 @@ contactFinalButton: "Start a Conversation",
         navIndustries: 'القطاعات',
         navHowWeWork: 'كيف نعمل',
         navRoadmap: 'خارطة الطريق',
+        navMarketplace: 'السوق',
         navContact: 'تواصل معنا',
         navLanguage: 'English',
 
