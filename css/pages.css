@@ -591,3 +591,502 @@ Loaded after global.css and responsive.css
     min-height: 220px;
   }
 }
+
+/* =========================================================
+HOME V2 — PREMIUM HERO VISUAL
+Adds depth, precision and restrained technology ambience
+without changing the existing HTML structure.
+========================================================= */
+
+.page-home .hero-visual {
+  position: relative;
+  min-height: 500px;
+  isolation: isolate;
+}
+
+.page-home .hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(32, 198, 208, 0.16);
+  border-radius: 50%;
+  box-shadow:
+    0 0 90px rgba(32, 198, 208, 0.08),
+    inset 0 0 70px rgba(0, 128, 190, 0.04);
+  pointer-events: none;
+}
+
+.page-home .hero-visual::after {
+  content: "";
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 128, 190, 0.08);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(32, 198, 208, 0.07) 0%,
+      rgba(0, 128, 190, 0.035) 28%,
+      transparent 66%
+    );
+  pointer-events: none;
+}
+
+.page-home .hero-visual .orbit {
+  width: 330px;
+  height: 330px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-color: rgba(32, 198, 208, 0.24);
+  box-shadow:
+    0 0 45px rgba(32, 198, 208, 0.08),
+    inset 0 0 35px rgba(0, 128, 190, 0.04);
+  animation: premiumOrbitPulse 7s ease-in-out infinite;
+}
+
+.page-home .hero-visual .core {
+  width: 150px;
+  height: 150px;
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(32, 198, 208, 0.22),
+      rgba(0, 128, 190, 0.10) 48%,
+      rgba(4, 29, 58, 0.04) 100%
+    );
+  border: 1px solid rgba(32, 198, 208, 0.20);
+  box-shadow:
+    0 0 50px rgba(32, 198, 208, 0.12),
+    inset 0 0 30px rgba(255, 255, 255, 0.04);
+}
+
+.page-home .hero-visual .core-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--cyan);
+  box-shadow:
+    0 0 12px rgba(32, 198, 208, 0.75),
+    0 0 30px rgba(32, 198, 208, 0.35);
+}
+
+.page-home .hero-visual .node {
+  width: 7px;
+  height: 7px;
+  background: var(--cyan);
+  box-shadow: 0 0 14px rgba(32, 198, 208, 0.55);
+}
+
+.page-home .hero-visual .node:nth-child(2) {
+  transform: translate(-50%, -50%) translate(165px, 0);
+}
+
+.page-home .hero-visual .node:nth-child(3) {
+  transform: translate(-50%, -50%) translate(-82px, -142px);
+}
+
+.page-home .hero-visual .node:nth-child(4) {
+  transform: translate(-50%, -50%) translate(-92px, 138px);
+}
+
+@keyframes premiumOrbitPulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.88;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.025);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-home .hero-visual .orbit {
+    animation: none;
+  }
+}
+
+
+/* =========================================================
+HOME V2 — PREMIUM TYPOGRAPHY & SECTION RHYTHM
+Refines hierarchy, spacing and desktop proportions.
+========================================================= */
+
+@media (min-width: 1101px) {
+
+  .page-home .hero {
+    width: min(100% - 96px, 1320px);
+    min-height: 720px;
+    grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+    gap: 72px;
+    padding: 96px 0 120px;
+  }
+
+  .page-home .hero-content {
+    max-width: 760px;
+  }
+
+  .page-home .hero-content .eyebrow {
+    margin-bottom: 22px;
+    letter-spacing: 2px;
+  }
+
+  .page-home .hero-content h1 {
+    max-width: 760px;
+    font-size: clamp(3.5rem, 5vw, 5.25rem);
+    line-height: 0.99;
+    letter-spacing: -0.045em;
+    margin-bottom: 26px;
+  }
+
+  .page-home .hero-content > p {
+    max-width: 650px;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    margin-bottom: 30px;
+  }
+
+  .page-home .hero-actions {
+    gap: 14px;
+  }
+
+  .page-home #services {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .page-home #services > .eyebrow,
+  .page-home #services > h2,
+  .page-home #services > .section-intro {
+    max-width: 900px;
+  }
+
+  .page-home #services > h2 {
+    font-size: clamp(2.7rem, 4vw, 4rem);
+    letter-spacing: -0.035em;
+    margin-bottom: 14px;
+  }
+
+  .page-home #services > .section-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 48px;
+  }
+
+  .page-home #services .grid {
+    gap: 20px;
+  }
+
+  .page-home #services .card {
+    min-height: 210px;
+    padding: 30px 28px;
+    border-radius: 18px;
+    transition:
+      transform var(--transition),
+      box-shadow var(--transition),
+      border-color var(--transition);
+  }
+
+  .page-home #services .card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 22px 45px rgba(18, 43, 70, 0.12),
+      0 0 0 1px rgba(32, 198, 208, 0.08);
+  }
+
+  .page-home #roadmap {
+    padding-top: 108px;
+    padding-bottom: 112px;
+  }
+
+  .page-home #roadmap > h2 {
+    font-size: clamp(2.7rem, 4vw, 4rem);
+    letter-spacing: -0.035em;
+  }
+
+  .page-home #roadmap .card {
+    min-height: 245px;
+  }
+
+  .page-home .cta {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+}
+
+
+/* =========================================================
+HOME V2 — MOBILE PREMIUM REFINEMENT
+Designed specifically for narrow mobile screens.
+Preserves the desktop composition while improving
+readability, hierarchy and touch-friendly spacing.
+========================================================= */
+
+@media (max-width: 560px) {
+
+  /* ---------- HERO ---------- */
+
+  .page-home .hero {
+    width: calc(100% - 32px);
+    padding: 58px 0 54px;
+    gap: 28px;
+  }
+
+  .page-home .hero-content {
+    max-width: none;
+  }
+
+  .page-home .hero-content .eyebrow {
+    margin-bottom: 14px;
+    font-size: 11px;
+    letter-spacing: 1.6px;
+  }
+
+  .page-home .hero-content h1 {
+    max-width: 340px;
+    font-size: clamp(2.25rem, 11vw, 3.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    margin-bottom: 18px;
+  }
+
+  .page-home .hero-content > p {
+    max-width: 350px;
+    font-size: 0.96rem;
+    line-height: 1.65;
+    margin-bottom: 22px;
+  }
+
+  .page-home .hero-actions {
+    gap: 10px;
+  }
+
+  .page-home .hero-actions .button,
+  .page-home .hero-actions a.button {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  .page-home .hero-visual {
+    min-height: 290px;
+    margin-top: 4px;
+    overflow: hidden;
+  }
+
+  .page-home .hero-visual::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .page-home .hero-visual::after {
+    width: 390px;
+    height: 390px;
+  }
+
+  .page-home .hero-visual .orbit {
+    width: 235px !important;
+    height: 235px !important;
+  }
+
+  .page-home .hero-visual .core {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .page-home .hero-visual .core-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .page-home .hero-visual .node {
+    width: 5px;
+    height: 5px;
+  }
+
+  .page-home .hero-visual .node:nth-child(2) {
+    transform: translate(-50%, -50%) translate(118px, 0);
+  }
+
+  .page-home .hero-visual .node:nth-child(3) {
+    transform: translate(-50%, -50%) translate(-59px, -102px);
+  }
+
+  .page-home .hero-visual .node:nth-child(4) {
+    transform: translate(-50%, -50%) translate(-66px, 98px);
+  }
+
+  /* ---------- SERVICES ---------- */
+
+  .page-home #services {
+    padding-top: 58px;
+    padding-bottom: 64px;
+  }
+
+  .page-home #services > .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .page-home #services > h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    margin-bottom: 12px;
+  }
+
+  .page-home #services > .section-intro {
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .page-home #services .grid {
+    gap: 14px;
+  }
+
+  .page-home #services .card {
+    min-height: 0;
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .page-home #services .card-number {
+    margin-bottom: 16px;
+  }
+
+  .page-home #services .card h3 {
+    font-size: 1.08rem;
+    line-height: 1.18;
+    margin-bottom: 8px;
+  }
+
+  .page-home #services .card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- ROADMAP ---------- */
+
+  .page-home #roadmap {
+    padding-top: 64px;
+    padding-bottom: 68px;
+  }
+
+  .page-home #roadmap > h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+
+  .page-home #roadmap .card {
+    min-height: 0;
+    padding: 24px 20px;
+  }
+
+  .page-home #roadmap .card h3 {
+    font-size: 1.08rem;
+  }
+
+  .page-home #roadmap .card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .page-home #roadmap .button {
+    margin-top: 6px;
+  }
+
+  /* ---------- FINAL CTA ---------- */
+
+  .page-home .cta {
+    padding: 68px 20px;
+  }
+
+  .page-home .cta h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+  }
+
+  .page-home .cta p {
+    max-width: 330px;
+    margin-inline: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  .page-home .site-footer {
+    padding-top: 48px;
+  }
+
+  .page-home .footer-content {
+    gap: 30px;
+  }
+
+  .page-home .footer-column p {
+    max-width: 330px;
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .page-home .footer-column a,
+  .page-home .footer-column span {
+    font-size: 0.84rem;
+  }
+
+  .page-home .footer-legal {
+    margin-top: 4px;
+    padding-top: 22px;
+  }
+
+  .page-home .footer-bottom {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+}
+
+/* Extra-small devices such as iPhone SE */
+@media (max-width: 380px) {
+
+  .page-home .hero {
+    padding-top: 48px;
+  }
+
+  .page-home .hero-content h1 {
+    font-size: 2.15rem;
+  }
+
+  .page-home .hero-content > p {
+    font-size: 0.91rem;
+  }
+
+  .page-home .hero-visual {
+    min-height: 270px;
+  }
+
+  .page-home #services > h2,
+  .page-home #roadmap > h2,
+  .page-home .cta h2 {
+    font-size: 1.95rem;
+  }
+
+  .page-home #services .card,
+  .page-home #roadmap .card {
+    padding: 22px 18px;
+  }
+
+}
