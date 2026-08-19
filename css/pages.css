@@ -427,7 +427,6 @@ Loaded after global.css and responsive.css
   pointer-events: none;
 }
 
-.page-home #roadmap .section-heading,
 .page-home #roadmap .card,
 .page-home #roadmap .roadmap-cta {
   position: relative;
@@ -818,10 +817,6 @@ Refines hierarchy, spacing and desktop proportions.
     min-height: 245px;
   }
 
-  .page-home .cta {
-    padding-top: 112px;
-    padding-bottom: 112px;
-  }
 
 }
 
@@ -1009,19 +1004,6 @@ readability, hierarchy and touch-friendly spacing.
 
   /* ---------- FINAL CTA ---------- */
 
-  .page-home .cta {
-    padding: 68px 20px;
-  }
-
-  .page-home .cta h2 {
-    font-size: clamp(2rem, 9vw, 2.65rem);
-    line-height: 1.06;
-    letter-spacing: -0.035em;
-  }
-
-  .page-home .cta p {
-    max-width: 330px;
-    margin-inline: auto;
     font-size: 0.9rem;
     line-height: 1.6;
   }
@@ -1078,11 +1060,6 @@ readability, hierarchy and touch-friendly spacing.
     min-height: 270px;
   }
 
-  .page-home #services > h2,
-  .page-home #roadmap > h2,
-  .page-home .cta h2 {
-    font-size: 1.95rem;
-  }
 
   .page-home #services .card,
   .page-home #roadmap .card {
